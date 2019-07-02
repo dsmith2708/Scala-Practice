@@ -18,8 +18,13 @@ object Main extends App {
     new HelloWorld("Gareth", 40), new HelloWorld("David", 38))
   println("Array of people:")
   for(person <- personArray) {
-    println("name: " + person.name);
+    println("name: " + person.name)
   }
 
+  val numberSet =  scala.collection.mutable.Set(1,2,4,3,2,2,2,2,2,3,4,5,7,8)
+  println("people in set:")
+  for (number <- numberSet) {
+    println("number: " + number)
+  }
 
 }
